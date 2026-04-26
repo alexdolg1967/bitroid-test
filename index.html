@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Roboto-Thin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Roboto-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Roboto-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Roboto-Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="icon" type="image/png" href="./assets/img/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+		<meta name="apple-mobile-web-app-title" content="Bitroid">
+		<link rel="manifest" href="./assets/img/site.webmanifest">
+		<meta name="keywords" content="Сайт+SEO">
+		<meta name="description" content="IT company - Создание сайта под ключ с SEO-продвижением">
+		<title>Битроид | Сайт+SEO</title>
+		<style>
+			@charset "UTF-8";*{margin:0;border:0;padding:0}*,::after,::before{box-sizing:border-box}::after,::before{display:inline-block}html{height:100%}body{line-height:1.3;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}a{display:inline-block;color:inherit;text-decoration:none}a:not([class]){text-decoration-skip-ink:auto}ul li[class]{list-style:none}img{vertical-align:middle;max-width:100%;height:auto}h2,h3{font-weight:inherit;font-size:inherit;text-wrap:balance}p{text-wrap:pretty}img,picture,svg{display:block;border-radius:inherit;max-width:100%}button,input,textarea{background-color:transparent;color:inherit;font-size:inherit;line-height:inherit;font-family:inherit}input,textarea{width:100%}textarea{overflow:auto;resize:vertical}label{display:inline-block}@media (prefers-reduced-motion:reduce){*,::after,::before{animation-duration:0s!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}html{interpolate-size:allow-keywords}}@font-face{font-family:iconfont;font-display:swap;src:url("assets/fonts/iconfont.woff2?da5f3f522212b123eee0d788fa833347") format("woff2")}[class*="--icon-"]::before{font-family:iconfont}[class*="--icon-separ"]::before{content:"\f101"}[class*="--icon-search"]::before{content:"\f102"}[class*="--icon-home"]::before{content:"\f104"}[class*="--icon-caretdown"]::before{content:"\f106"}[class*="--icon-arrow"]::before{content:"\f107"}:root{--font-family:'Roboto',sans-serif;--content-width:1320px;--content-offset:15px;--swiper-pagination-bullet-size:10px;--swiper-pagination-bullet-horizontal-gap:5px;--swiper-pagination-bullet-border-radius:20px;--swiper-pagination-bottom:0;--swiper-pagination-color:#34ae6b;--swiper-pagination-bullet-inactive-color:#ffffff;--swiper-pagination-bullet-inactive-opacity:0.9;--header-height:71px;--min-height-section:calc(100svh - var(--header-height));--text-color:#1e1e1e;--bg-color:#ffffff;--primary-color:#34ae6b;--secondary-color:#2bac68;--accent-color:#2587f9;--light-color:#f0f1f0;accent-color:var(--accent-color);--box-shadow:0 5px 15px var(--secondary-color),0 -5px 15px var(--secondary-color);--box-shadow-hover:0 5px 15px var(--primary-color),0 -5px 15px var(--primary-color);--vk-color:#0077ff;--tg-color:#29a0dc;--wa-color:#25d366;--yt-color:#ff0033}html{accent-color:var(--accent-color)}body{display:flex;position:relative;flex-direction:column;justify-content:start;min-width:320px;min-height:100svh;color:var(--text-color);font-weight:400;font-family:var(--font-family);background-color:var(--bg-color)}.wrapper{display:grid;grid-template-rows:var(--header-height) 1fr auto;flex:1 1 auto;overflow:clip}.wrapper>main{grid-row:2;height:100%}.wrapper>*{min-width:0}.container,[class*=__container]{margin-right:auto;margin-left:auto;width:min(var(--content-width),100% - var(--content-offset) * 2)}section{position:relative}section:not(:first-of-type){padding-top:clamp(1.875rem,.735rem + 4.86vw,4.688rem);padding-bottom:clamp(1.875rem,.735rem + 4.86vw,4.688rem)}.section-top{display:grid;grid-auto-flow:row;gap:30px}.section__title{font-weight:600;line-height:1.3;text-align:left;text-wrap:balance}.section__subtitle{font-weight:300;font-size:clamp(.875rem,.789rem + .38vw,1.125rem);line-height:1.3}.ellipses{--size-ellipse:clamp(9.375rem, 5.785rem + 15.96vw, 18.75rem);position:relative}.ellipses::after,.ellipses::before{position:absolute;z-index:-1;filter:blur(clamp(5.313rem,3.996rem + 5.85vw,8.75rem));border-radius:var(--size-ellipse);width:var(--size-ellipse);height:var(--size-ellipse);content:""}.ellipses::before{top:-10%;left:10%;background-color:var(--secondary-color)}.ellipses::after{right:29%;bottom:35%;background-color:var(--accent-color)}.ellipses.ellipses--recomend::before{top:58%;left:54%}.ellipses.ellipses--recomend::after{right:50%;bottom:12%}@media (min-width:768px){:root{--header-height:76px}.ellipses::after{right:24%;bottom:-1%}.ellipses.ellipses--recomend::before{top:9%;left:19%}.ellipses.ellipses--recomend::after{right:29%;bottom:35%}}@media (min-width:1280px){.ellipses::before{top:-19%;left:4%}.ellipses.ellipses--recomend::before{top:31%;left:21%}.ellipses.ellipses--recomend::after{right:24%;bottom:-10%}}.swiper{position:relative;max-width:100%}@media (prefers-reduced-motion:no-preference) and (min-width:768px){.reveal{transform:translateY(36px);opacity:0;will-change:transform,opacity}}.index .section-hero{--size-image-hero:clamp(28.125rem, 19.747rem + 37.23vw, 50rem);display:flex;align-items:center;margin-bottom:40px;min-height:clamp(34.063rem,27.959rem + 27.13vw,50rem)}.index .section-hero__grid{display:grid;grid-template-columns:1fr}@media (min-width:768px){.index .section-hero{margin-bottom:0}.index .section-hero__grid{grid-template-columns:2fr 1fr}}.index .section-hero__content{position:relative;align-self:center;gap:0;z-index:1;margin:0}.index .section-hero__title{margin-bottom:25px;font-weight:600}.index .section-hero__title{line-height:1.3;text-align:center}@media (min-width:600px){.index .section-hero__title{text-align:left}}.index .section-hero__subtitle{text-align:center}.index .section-hero__subtitle{line-height:1.3}.index .section-hero__actions{display:flex;flex-direction:column;align-items:center;gap:16px;margin-top:80px}.index .section-hero__image{position:relative}.index .section-hero__image .image-wrapper{position:absolute;right:calc(44% - var(--size-image-hero)/ 2);bottom:-170px;width:var(--size-image-hero);height:var(--size-image-hero)}@media (min-width:600px){.index .section-hero__subtitle{max-width:75ch;text-align:left}.index .section-hero__actions{flex-direction:row}.index .section-hero__image .image-wrapper{bottom:-270px}button[type=submit]{grid-row:2}}.index .section-hero__image .image-wrapper img{width:100%;height:100%;object-fit:cover}.index .section-hero__image .image-wrapper::before{position:absolute;transform:rotate(100deg);mix-blend-mode:color;inset:-20px;background:linear-gradient(148deg,#34ae6b 0,#2587f9 100%);content:""}.index .section-recommended__title{max-width:39ch;text-wrap:auto}.index .section-recommended .recomend__slider{padding-bottom:30px}.index .section-recommended .recomend__wrapper{display:flex}@media (min-width:768px){.index .section-hero__image .image-wrapper{top:calc(50% - var(--size-image-hero)/ 2);right:calc(clamp(8.625rem,3.536rem + 10.6vw,12.813rem) * -1);bottom:initial}.index .section-recommended .recomend__slider{padding-bottom:0}.index .section-recommended .recomend__slider .swiper-pagination{display:none}.index .section-recommended .recomend__wrapper{flex-direction:column;gap:16px}.index .section-recommended .recomend__slide{flex-shrink:1;height:auto}}@media (min-width:1024px){.index .section-recommended .recomend__wrapper{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1rem,-.362rem + 2.13vw,1.5rem)}}.index .section-recommended .recomended-item{display:grid;grid-template-rows:auto 1fr auto;grid-template-columns:1fr;gap:8px;box-shadow:0 4px 25px 0 rgba(1,8,3,.08);border-radius:30px;background:#fff;height:100%}.index .section-recommended .recomended-item__title{font-weight:600}.index .section-recommended .recomended-item__title{line-height:1.3}@media (min-width:768px){.index .section-recommended .recomended-item{grid-template-rows:auto 1fr;grid-template-columns:1fr 200px;row-gap:12px}.index .section-recommended .recomended-item__description{grid-row:2}}@media (min-width:1024px){.index .section-recommended .recomended-item{grid-template-rows:auto 1fr auto;grid-template-columns:1fr;row-gap:12px;min-width:320px}.index .section-projects__grid .section-projects__link{display:none}}.index .section-faqs .spollers__body{border:0;padding:clamp(1.25rem,.821rem + 1.9vw,2.5rem) 0 0}.spollers__body{border:1px solid #eee;border-radius:5px;padding:20px}:root{--swiper-theme-color:#007aff}:host{position:relative;display:block;margin-left:auto;margin-right:auto;z-index:1}.swiper{margin-left:auto;margin-right:auto;position:relative;overflow:hidden;list-style:none;padding:0;z-index:1;display:block}.swiper-wrapper{position:relative;width:100%;height:100%;z-index:1;display:flex;box-sizing:content-box}.swiper-wrapper{transform:translate3d(0,0,0)}.swiper-slide{flex-shrink:0;width:100%;height:100%;position:relative;display:block}.swiper-pagination{position:absolute;text-align:center;transform:translate3d(0,0,0);z-index:10}&.swiper-pagination-disabled,.swiper-pagination-disabled>&{display:none!important}@media screen and (min-width:992px){.menu__body{position:relative;right:0;margin-right:auto;margin-left:auto;box-shadow:none;background-color:transparent;padding:0;width:auto;max-width:none;height:auto;overflow:initial}}.menu__list{display:flex;flex-direction:column;gap:30px;background-color:var(--bg-color)}@media screen and (min-width:992px){.menu__list{flex-direction:row;align-items:center;gap:24px;background-color:transparent}}.menu__item{position:relative}.menu__item>a{display:flex;flex-direction:row-reverse;justify-content:flex-end;gap:10px;padding-block:10px;font-weight:400;font-size:16px;line-height:1.3;text-decoration:none}.menu__item.menu__item--active>a{color:var(--primary-color)}.menu__item .submenu{flex-direction:column;align-items:stretch;box-shadow:0 8px 16px rgba(0,0,0,.1);background-color:var(--bg-color);min-width:100%;height:0;overflow:hidden}.menu__item .submenu li{padding-inline:10px}.menu__item .submenu li>a{justify-content:space-between;justify-self:baseline;text-align:left;text-wrap:nowrap}.menu__actions{display:flex;justify-content:space-between;align-items:center;margin-top:auto}@media screen and (min-width:992px){.menu__item .submenu{display:none;position:absolute;top:100%;left:0;height:auto;overflow:initial}.menu__actions{display:none}}.icon-menu{display:block;position:relative;z-index:5;border:none;width:1.1875rem;height:.875rem}.icon-menu span,.icon-menu::after,.icon-menu::before{position:absolute;right:0;background-color:var(--text-color);width:100%;height:2px;content:""}.icon-menu::before{top:0}.icon-menu::after{bottom:0}.icon-menu span{top:calc(50% - 1px)}@media screen and (min-width:992px){.icon-menu{display:none}}.header{--size-logo:159px;position:absolute;top:0;right:0;left:0;grid-row:1;z-index:200;background-color:var(--bg-color);padding-top:10px;padding-bottom:10px;width:100%;height:fit-content;color:var(--text-color)}.header__container{display:flex;justify-content:space-between;align-items:center}.header__logo{display:flex;align-items:center}.header__logo img{width:var(--size-logo)}.header__menu{display:flex;flex-grow:1;justify-content:flex-end;align-items:center;gap:16px}@media screen and (min-width:992px){.header__menu{justify-content:space-between}}.header__actions{display:flex;align-items:center;gap:24px}.header__actions .link-phone{display:none}@media (min-width:1280px){.header__actions .link-phone{display:block}}.header__actions .header__button{display:none}@media screen and (min-width:1200px){.header__actions .header__button{display:flex}}input[type=email],input[type=tel],input[type=text],textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}.input{display:block;border:1px solid #cecbcb;border-radius:10px;padding:10px;width:100%;caret-color:inherit}textarea.input{resize:vertical}label{display:flex;position:relative;flex-direction:column;align-self:start;gap:4px}button[type=submit]{justify-self:start}[data-fls-form]{display:grid;gap:15px}.button{--btn-padding:clamp(0.75rem, 0.529rem + 0.98vw, 1rem) clamp(1.563rem, 1.011rem + 2.45vw, 2.188rem);--btn-gap:10px;--btn-border-width:1px;--btn-border-style:solid;--btn-border-radius:60px;--btn-font-family:inherit;--btn-font-size:clamp(0.875rem, 0.765rem + 0.49vw, 1rem);--btn-font-weight:600;--btn-color:var(--light-color);--btn-bg-color:var(--primary-color);--btn-border-color:var(--primary-color);--btn-size-icon:24px;display:inline-flex;position:relative;justify-content:center;align-items:center;vertical-align:middle;gap:var(--btn-gap);border-width:var(--btn-border-width,1px);border-style:var(--btn-border-style);border-color:var(--btn-border-color);border-radius:var(--btn-border-radius);background-color:var(--btn-bg-color);padding:var(--btn-padding);color:var(--btn-color);font-weight:var(--btn-font-weight,600);font-size:var(--btn-font-size, 18px);line-height:1.4;font-family:var(--btn-font-family);text-align:center;text-decoration:none}.header__search{display:flex;position:relative;align-self:stretch;z-index:10}.header__search .search-input{position:absolute;top:50%;right:20px;transform:translateY(-50%);opacity:0;border:none;padding:5px;width:0}.header__search #search-button{border:none;background:0 0}.header__search #search-button::before{margin-top:5px}.cookie-banner{display:none;position:fixed;right:15px;bottom:10px;left:15px;z-index:80;box-shadow:0 20px 40px rgba(16,19,26,.28);border-radius:22px;background:rgba(16,19,26,.94);padding:15px 15px 12px;color:#fff}.cookie-banner-inner{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:18px}.cookie-banner p{margin:0;max-width:760px;color:rgba(255,255,255,.82);font-size:14px}.breadcrumbs{position:relative;z-index:1}.breadcrumbs__list{display:flex;flex-wrap:wrap;justify-content:flex-start;align-items:center;gap:8px}.breadcrumbs__item{display:inline-flex;align-items:center;gap:8px;margin:0;color:var(--text-color)}.breadcrumbs__separator{display:flex;align-items:center;margin-top:0;width:auto;height:100%}.breadcrumbs a,.breadcrumbs p{margin:0;font-weight:400}.breadcrumbs a,.breadcrumbs p{font-family:var(--font-family)}.breadcrumbs a{display:flex;gap:6px;color:var(--text-color);text-underline-offset:5px}body::after{position:fixed;top:0;left:0;opacity:0;z-index:149;background-color:rgba(0,0,0,.5);width:100%;height:100%;content:""}[data-fls-popup]{position:fixed;top:0;right:0;bottom:0;left:0;visibility:hidden;padding:30px 10px}[data-fls-popup-wrapper]{display:flex;display:flex;flex:1 1 auto;flex-direction:column;justify-content:center;align-items:center;align-items:center;width:100%;min-height:100%}[data-fls-popup-body]{display:flex;flex-direction:column;gap:25px;transform:scale(0);visibility:hidden;border-radius:20px;background-color:#eee;padding:20px;width:100%;max-width:900px}.popup__header{display:flex;align-items:flex-start;gap:20px}.popup__title{flex:auto;font-weight:500;font-size:20px;text-align:center}[data-fls-popup-close]{margin-left:auto}[data-fls-popup-close] svg{flex-shrink:0;width:25px;height:25px}.popup__content button[type=submit]{align-self:center}@media (min-width:600px){[data-fls-form]{grid-auto-flow:column}.popup__content form{grid-auto-flow:column}.popup__content button[type=submit]{grid-row:3;grid-column:1}}
+		</style>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1777212620630"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/rolldown-runtime.min.js?v=1777212620630">
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1777212620630">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1777212620630" media="print" onload="this.media='all'">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" data-fls-header-scroll="" data-fls-header-scroll-show="" class="header">
+				<div class="header__container">
+					<div class="header__logo">
+						<img src="./assets/img/logo-full.png" width="159" height="84" alt="Битроид - IT company" data-fls-image-ignore="">
+					</div>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#" class="menu__link --icon-caretdown">Услуги</a>
+									<ul class="submenu">
+										<li class="menu__item">
+											<a href="#" class="menu__link --icon-caretdown">Создание сайтов</a>
+											<ul class="submenu">
+												<li class="menu__item menu__item--active">
+													<a href="#" class="menu__link">Сайт+SEO</a>
+												</li>
+											</ul>
+										</li>
+										<li class="menu__item">
+											<a href="#" class="menu__link">Исправление ошибок</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link --icon-caretdown">Продукты</a>
+									<ul class="submenu">
+										<li class="menu__item">
+											<a href="#" class="menu__link">Сайт</a>
+										</li>
+										<li class="menu__item">
+											<a href="#" class="menu__link">Мобильное приложение</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link --icon-caretdown">Готовые решения</a>
+									<ul class="submenu">
+										<li class="menu__item">
+											<a href="#" class="menu__link">Лендинг</a>
+										</li>
+										<li class="menu__item">
+											<a href="#" class="menu__link">Каталог</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link --icon-caretdown">Кейсы и проекты</a>
+									<ul class="submenu">
+										<li class="menu__item">
+											<a href="#" class="menu__link">Сайт</a>
+										</li>
+										<li class="menu__item">
+											<a href="#" class="menu__link">Сайт</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link --icon-caretdown">О нас</a>
+									<ul class="submenu">
+										<li class="menu__item">
+											<a href="#" class="menu__link">Руководство</a>
+										</li>
+										<li class="menu__item">
+											<a href="#" class="menu__link">Команда</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<div class="menu__actions">
+								<a href="tel:+74954142808" class="link-phone">+7 (495) 414 28 08</a>
+								<button data-fls-button="" type="button" data-fls-popup-link="project" class="button header__button">Обсудить проект</button>
+							</div>
+						</nav>
+						<div class="header__actions">
+							<a href="tel:+74954142808" class="link-phone">+7 (495) 414 28 08</a>
+							<div data-fls-headersearch="" class="header__search">
+								<input type="text" id="search-input" placeholder="Поиск..." class="search-input">
+								<button id="search-button" class="--icon-search" aria-label="Искать"></button>
+							</div>
+							<button data-fls-button="" type="button" data-fls-popup-link="project" class="button header__button">Обсудить проект</button>
+						</div>
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+					</div>
+					<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+				</div>
+			</header>
+			<main class="page">
+				<div data-fls-index="" class="index">
+					<div data-fls-breadcrumbs="" class="breadcrumbs">
+						<div class="breadcrumbs__container">
+							<ul class="breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+								<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a href="index.html" itemscope itemtype="https://schema.org/WebPage" itemprop="item" class="--icon-home">Главная</a>
+									<span class="breadcrumbs__separator --icon-separ"></span>
+								</li>
+								<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a href="/" itemscope itemtype="https://schema.org/WebPage" itemprop="item">Услуги</a>
+									<span class="breadcrumbs__separator --icon-separ"></span>
+								</li>
+								<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a href="/" itemscope itemtype="https://schema.org/WebPage" itemprop="item">Создание сайтов</a>
+									<span class="breadcrumbs__separator --icon-separ"></span>
+								</li>
+								<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<p>Сайт+SEO</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<section class="section-hero" aria-labelledby="section-hero-title">
+						<div class="container">
+							<div class="section-hero__grid">
+								<div class="section-top section-hero__content ellipses">
+									<h2 class="section__title section-hero__title" id="section-hero-title">Создание сайта под ключ с SEO-продвижением</h2>
+									<p class="section__subtitle section-hero__subtitle">
+										Разработка сайтов с учётом требований по SEO-продвижению с гарантией топовых позиций в поиске. Создаём веб-проекты, которые максимально быстро занимают
+						верхние позиции в поисковиках. Проводим оптимизацию перед запуском, чтобы вам не приходилось менять контент и мета-теги после старта.
+									</p>
+									<div class="section-hero__actions">
+										<button data-fls-button="" type="button" data-fls-popup-link="order" class="button header__button">Заказать сайт</button>
+										<a href="#" data-fls-popup-link="price" class="--icon-arrow">Рассчитать стоимость</a>
+									</div>
+								</div>
+								<div class="section-hero__image">
+									<div class="image-wrapper">
+										<picture>
+											<source media="(max-width: 425px)" srcset="./assets/img/hero/chart-425.webp" type="image/webp">
+											<source media="(max-width: 600px)" srcset="./assets/img/hero/chart-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/hero/chart-1200.webp" type="image/webp">
+											<img width="800" height="800" alt="chart" src="./assets/img/hero/chart.webp">
+										</picture>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section-recommended" aria-labelledby="section-recommended-title">
+						<div class="container">
+							<div class="section-top">
+								<h2 class="section__title section-recommended__title reveal" id="section-recommended-title">Кому рекомендуем выбрать создание сайтов с SEO-раскруткой</h2>
+							</div>
+							<div class="section-recommended__grid ellipses ellipses--recomend">
+								<div data-fls-slider="" class="recomend__slider swiper">
+									<div class="recomend__wrapper swiper-wrapper">
+										<div class="recomend__slide swiper-slide">
+											<article class="recomended-item reveal">
+												<h3 class="recomended-item__title">Интернет-магазин</h3>
+												<div class="recomended-item__description">
+													<p>
+														Создание и продвижение интернет-магазинов. Проектируем структуру фильтров под нечастотные запросы. Внедрим умный фильтр для SEO-тегов.
+													</p>
+												</div>
+												<div class="recomended-item__image">
+													<picture>
+														<source media="(max-width: 425px)" srcset="./assets/img/recomended/rec-1-425.webp" type="image/webp">
+														<source media="(max-width: 600px)" srcset="./assets/img/recomended/rec-1-600.webp" type="image/webp">
+														<source media="(max-width: 1200px)" srcset="./assets/img/recomended/rec-1-1200.webp" type="image/webp">
+														<img width="380" height="199" alt="Image" decoding="async" loading="lazy" src="./assets/img/recomended/rec-1.webp">
+													</picture>
+												</div>
+											</article>
+										</div>
+										<div class="recomend__slide swiper-slide">
+											<article class="recomended-item reveal">
+												<h3 class="recomended-item__title">Сфера услуг</h3>
+												<div class="recomended-item__description">
+													<p>
+														Создание и продвижение продающих сайтов. Делаем специализированные сайты под SEO-запросы. Прорабатываем структуру под гео-запросы.
+													</p>
+												</div>
+												<div class="recomended-item__image">
+													<picture>
+														<source media="(max-width: 425px)" srcset="./assets/img/recomended/rec-2-425.webp" type="image/webp">
+														<source media="(max-width: 600px)" srcset="./assets/img/recomended/rec-2-600.webp" type="image/webp">
+														<source media="(max-width: 1200px)" srcset="./assets/img/recomended/rec-2-1200.webp" type="image/webp">
+														<img width="380" height="199" alt="Image" decoding="async" loading="lazy" src="./assets/img/recomended/rec-2.webp">
+													</picture>
+												</div>
+											</article>
+										</div>
+										<div class="recomend__slide swiper-slide">
+											<article class="recomended-item reveal">
+												<h3 class="recomended-item__title">B2B-сайты</h3>
+												<div class="recomended-item__description">
+													<p>
+														Разработка и продвижение сайтов компаний, специализирующихся на предоставлении услуг корпоративному сегменту.
+													</p>
+												</div>
+												<div class="recomended-item__image">
+													<picture>
+														<source media="(max-width: 425px)" srcset="./assets/img/recomended/rec-3-425.webp" type="image/webp">
+														<source media="(max-width: 600px)" srcset="./assets/img/recomended/rec-3-600.webp" type="image/webp">
+														<source media="(max-width: 1200px)" srcset="./assets/img/recomended/rec-3-1200.webp" type="image/webp">
+														<img width="380" height="199" alt="Image" decoding="async" loading="lazy" src="./assets/img/recomended/rec-3.webp">
+													</picture>
+												</div>
+											</article>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section-composition" aria-labelledby="section-composition-title">
+						<div class="container">
+							<div class="section-top">
+								<h2 class="section__title section-composition__title reveal" id="section-composition-title">Что входит в услугу по созданию сайта с продвижением в поисковых системах</h2>
+								<p class="section__subtitle reveal">
+									Мы подходим к проекту комплексно: создание и оптимизация сайта идут параллельно, чтобы ваш ресурс сразу после запуска был готов привлекать органический трафик.
+					Все работы разделены на два взаимосвязанных стека.
+								</p>
+							</div>
+							<div class="section-composition__grid">
+								<div data-fls-slider="" class="composition__slider swiper">
+									<div class="composition__wrapper swiper-wrapper">
+										<div class="composition__slide swiper-slide">
+											<article class="composition-item reveal">
+												<h3 class="composition-item__title">Стек 1: Разработка</h3>
+												<div class="composition-item__description text-block">
+													<p>
+														Закладываем технический фундамент, от которого зависит скорость, стабильность и дальнейшая масштабируемость ресурса. Оптимизация и разработка сайтов
+										для нас — это не просто код, а продуманная архитектура.
+													</p>
+													<h4>Бэкенд:</h4>
+													<ul>
+														<li>Проектируем структуру базы данных.</li>
+														<li>Настраиваем серверную часть под высокие нагрузки.</li>
+														<li>Реализуем гибкую систему управления контентом.</li>
+													</ul>
+													<h4>Вёрстка:</h4>
+													<ul>
+														<li>
+															Верстаем сайт по стандартам HTML5/CSS3 — поисковые роботы легко считывают структуру страницы.
+														</li>
+														<li>
+															Адаптируем интерфейс под все устройства — мобильная версия проходит проверку Google Mobile-Friendly, что положительно влияет на ранжирование.
+														</li>
+														<li>Оптимизируем фронтенд-код для высокой скорости загрузки.</li>
+													</ul>
+												</div>
+											</article>
+										</div>
+										<div class="composition__slide swiper-slide">
+											<article class="composition-item accent-item reveal">
+												<h3 class="composition-item__title">Стек 2: SEO-оптимизация</h3>
+												<div class="composition-item__description text-block">
+													<p>Параллельно с разработкой мы проводим SEO-оптимизацию сайта под ключ.</p>
+													<ul>
+														<li>
+															Собираем семантическое ядро, анализируем поисковые запросы вашей тематики, отбираем релевантные ключевые слова.
+														</li>
+														<li>
+															Группируем запросы по смыслу и распределяем по страницам сайта, чтобы каждая отвечала на конкретный запрос пользователя.
+														</li>
+														<li>
+															Составляем Robots.txt — закрываем от индексации служебные страницы и открываем важный контент.
+														</li>
+														<li>
+															Генерируем карту сайта (Sitemap.xml) для ускорения индексации новых страниц и отслеживания структуры ресурса поисковиками.
+														</li>
+														<li>Размечаем контент через Schema.org, чтобы повысить кликабельность.</li>
+														<li>Настраиваем ссылки в соцсетях через Open Graph.</li>
+														<li>Настраиваем 301-редиректы для сохранения ссылочного веса.</li>
+														<li>
+															Формируем понятные человеку адреса страниц — это улучшает восприятие ссылки и ранжирование.
+														</li>
+														<li>Указываем канонические адреса через Canonical.</li>
+													</ul>
+												</div>
+											</article>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section-projects" aria-labelledby="section-projects-title">
+						<div class="container">
+							<div class="section-top">
+								<h2 class="section__title section-projects__title reveal" id="section-projects-title">Кейсы и проекты</h2>
+								<p class="section__subtitle section-projects__subtitle reveal">Помогаем бизнесам решать задачи максимально эффективно</p>
+								<a data-fls-button="" href="#" class="button section-projects__link">Смотреть все кейсы</a>
+							</div>
+							<div class="section-projects__grid ellipses ellipses--projects reveal">
+								<div data-fls-slider="" class="projects__slider swiper-container-3d swiper">
+									<div class="projects__wrapper swiper-wrapper">
+										<div class="projects__slide swiper-slide">
+											<article class="project-item">
+												<span class="project-item__category">Автоматизация</span>
+												<h3 class="project-item__title">Автоматизация процессов для строительной компании</h3>
+												<div class="project-item__content">
+													<div class="project-item__description">
+														<p>Content</p>
+													</div>
+													<a href="#" class="project-item__link --icon-caretdown">Читать кейс</a>
+												</div>
+											</article>
+										</div>
+										<div class="projects__slide swiper-slide">
+											<article class="project-item">
+												<span class="project-item__category">Корпоративные порталы</span>
+												<h3 class="project-item__title">Стройхолдинг</h3>
+												<div class="project-item__content">
+													<div class="project-item__description">
+														<p>Ускорили выполнение задач строительной компании на 20%.</p>
+													</div>
+													<a href="#" class="project-item__link --icon-caretdown">Читать кейс</a>
+												</div>
+											</article>
+										</div>
+										<div class="projects__slide swiper-slide">
+											<article class="project-item">
+												<span class="project-item__category">Автоматизация</span>
+												<h3 class="project-item__title">Автоматизация процессов для строительной компании</h3>
+												<div class="project-item__content">
+													<div class="project-item__description">
+														<p>Content</p>
+													</div>
+													<a href="#" class="project-item__link --icon-caretdown">Читать кейс</a>
+												</div>
+											</article>
+										</div>
+										<div class="projects__slide swiper-slide">
+											<article class="project-item">
+												<span class="project-item__category">Корпоративные порталы</span>
+												<h3 class="project-item__title">Стройхолдинг</h3>
+												<div class="project-item__content">
+													<div class="project-item__description">
+														<p>Ускорили выполнение задач строительной компании на 20%.</p>
+													</div>
+													<a href="#" class="project-item__link --icon-caretdown">Читать кейс</a>
+												</div>
+											</article>
+										</div>
+										<div class="projects__slide swiper-slide">
+											<article class="project-item">
+												<span class="project-item__category">Автоматизация</span>
+												<h3 class="project-item__title">Автоматизация процессов для строительной компании</h3>
+												<div class="project-item__content">
+													<div class="project-item__description">
+														<p>Content</p>
+													</div>
+													<a href="#" class="project-item__link --icon-caretdown">Читать кейс</a>
+												</div>
+											</article>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+								<button type="button" class="swiper-button-prev"></button>
+								<button type="button" class="swiper-button-next"></button>
+								<a data-fls-button="" href="#" class="button section-projects__link">Смотреть все кейсы</a>
+							</div>
+						</div>
+					</section>
+					<section class="section-faqs" aria-labelledby="section-faqs-title">
+						<div class="container">
+							<div class="section-top">
+								<h2 class="section__title section-faqs__title" id="section-faqs-title">Часто задаваемые вопросы</h2>
+								<p class="section__subtitle section-faqs__subtitle">Собрали ответы на самые частые вопросы наших клиентов</p>
+								<a href="#" class="section-faqs__link --icon-arrow">Читать все ответы на вопросы</a>
+							</div>
+							<div class="section-faqs__grid ellipses ellipses--faqs">
+								<div data-fls-spollers="" data-fls-spollers-one="" class="spollers">
+									<details class="spollers__item" data-fls-spollers-open="">
+										<summary class="spollers__title">Чем SEO-сайт отличается от обычного?</summary>
+										<div class="spollers__body text-block">
+											SEO-сайт изначально проектируется с учётом требований поисковых систем: чистый код, правильная иерархия заголовков, оптимизированные мета-теги и высокая
+							скорость загрузки. В отличие от обычного сайта, где оптимизацию часто добавляют постфактум, здесь SEO-параметры закладываются уже на этапе прототипирования.
+							Это позволяет избежать дорогостоящих доработок после запуска и быстрее выйти в топ поиска. Такой ресурс лучше индексируется, получает больше органического
+							трафика и демонстрирует высокую конверсию. Вы получаете готовый маркетинговый актив.
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">Нужно ли платить за ссылки?</summary>
+										<div class="spollers__body">Контент спойлера #2</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">Что такое SEO-структура?</summary>
+										<div class="spollers__body">Контент спойлера #3</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">Сколько стоит создание и продвижение сайта?</summary>
+										<div class="spollers__body">Контент спойлера #4</div>
+									</details>
+								</div>
+								<div class="section-faqs__images">
+									<picture>
+										<source media="(max-width: 425px)" srcset="./assets/img/faqs/faqs-425.webp" type="image/webp">
+										<img width="489" height="488" decoding="async" loading="lazy" alt="Image" src="./assets/img/faqs/faqs.webp">
+									</picture>
+								</div>
+								<a href="#" class="section-faqs__link --mobile-link --icon-arrow">Читать все ответы на вопросы</a>
+							</div>
+						</div>
+					</section>
+					<section class="section-offer" aria-labelledby="section-offer-title">
+						<div class="container">
+							<div class="section-offer__grid">
+								<div class="section-offer__images">
+									<picture>
+										<source media="(max-width: 425px)" srcset="./assets/img/offer/offer-425.webp" type="image/webp">
+										<source media="(max-width: 600px)" srcset="./assets/img/offer/offer-600.webp" type="image/webp">
+										<img width="563" height="564" decoding="async" loading="lazy" alt="Image" src="./assets/img/offer/offer.webp">
+									</picture>
+								</div>
+								<div class="section-offer__content">
+									<div class="section-top">
+										<h2 class="section__title section-offer__title" id="section-offer-title">Получите коммерческое предложение</h2>
+										<p class="section__subtitle">Закажите предварительный SEO-аудит вашей ниши и КП на разработку</p>
+									</div>
+									<form data-fls-form="ajax" data-fls-form-popup="popup" method="POST" action="/sendmail">
+										<label>
+											<input data-fls-input="" required type="text" name="name" autocomplete="off" data-fls-form-errtext="Error name" data-fls-form-validatenow="" placeholder="Ваше имя" class="input" inputmode="text">
+										</label>
+										<label>
+											<input required type="tel" name="tel" autocomplete="off" data-fls-form-errtext="Error tel" data-fls-input-mask="+7 (999) 999-99-99" data-fls-form-validatenow="" placeholder="+7 (___) ___-__-__" class="input" inputmode="numeric">
+										</label>
+										<label>
+											<input data-fls-input="" required type="text" name="link" autocomplete="off" data-fls-form-errtext="Error link" data-fls-form-validatenow="" placeholder="Ссылка на сайт" class="input" inputmode="text">
+										</label>
+										<button type="submit" class="button">Заказать сайт на WordPress</button>
+										<label data-fls-checkbox="" class="checkbox">
+											<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<span class="checkbox__icon"></span>
+											<span class="checkbox__text">
+												Нажимая на кнопку «Отправить», вы соглашаетесь с
+												<a href="#">Правилами обработки персональных данных</a>
+												и
+												<a href="#">Политикой конфиденциальности</a>
+											</span>
+										</label>
+									</form>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section-consultation" aria-labelledby="section-consultation-title">
+						<div class="container section-consultation__container">
+							<div class="section-consultation__grid">
+								<div class="section-top">
+									<h2 class="section__title section-consultation__title" id="section-consultation-title">Единая платформа — максимум эффективности</h2>
+									<p class="section__subtitle">Забудьте о множестве разрозненных сервисов и приложений.</p>
+								</div>
+								<div class="section-consultation__content">
+									<button data-fls-button="" type="button" data-fls-popup-link="consultation" class="button">Получить консультацию</button>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<div class="footer__grid ellipses ellipses--footer">
+						<div class="footer__logo">
+							<img src="./assets/img/logo.png" width="40" height="40" alt="Битроид - IT company" data-fls-image-ignore="">
+						</div>
+						<div class="footer__block">
+							<div class="footer__contacts">
+								<a href="tel:+74954142808" class="footer__link link-phone" rel="noopener noreferrer">+7 (495) 414 28 08</a>
+								<a href="mailto:b24@bitroid.ru" class="footer__link link-email">b24@bitroid.ru</a>
+								<address>428038, Чувашская республика, г. Чебоксары, ул. Мате Залка, д 10, офис 1</address>
+							</div>
+							<ul data-fls-socials="" class="socials">
+								<li class="socials__item">
+									<!-- VK -->
+									<a href="#" target="_blank" class="socials__link" rel="noopener noreferrer">
+										<picture>
+											<img class="vk-icon" width="24" height="24" alt="vk" decoding="async" loading="lazy" src="./assets/img/socials/vk.webp">
+										</picture>
+									</a>
+								</li>
+								<li class="socials__item">
+									<!-- TELEGRAM -->
+									<a href="#" target="_blank" class="socials__link" rel="noopener noreferrer">
+										<picture>
+											<img class="tg-icon" width="24" height="24" alt="telegram" decoding="async" loading="lazy" src="./assets/img/socials/tg.webp">
+										</picture>
+									</a>
+								</li>
+								<li class="socials__item">
+									<!-- Youtube -->
+									<a href="#" target="_blank" class="socials__link" rel="noopener noreferrer">
+										<picture>
+											<img class="wa-icon" width="35" height="24" alt="youtube" decoding="async" loading="lazy" src="./assets/img/socials/yt.webp">
+										</picture>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<nav class="footer-menu">
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">О компании</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Контакты</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Отзывы</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Новости</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Статьи</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Акции</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Вопрос-ответ</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Оплата</a>
+								</li>
+							</ul>
+						</nav>
+						<nav class="footer-menu">
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Внедрение CRM</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Создание сайта</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Перенос сайта</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Поддержка сайтов</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Решения для государственных организаций</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Обучение</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Автоматизация</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Интеграция и настройка</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="footer__license">
+							<div class="">
+								<p>1С Битрикс лицензия</p>
+								<p>Продление лицензий</p>
+							</div>
+							<nav class="footer-menu">
+								<ul class="footer-menu__list">
+									<li class="footer-menu__item">
+										<a href="#" class="footer-menu__link">Для партнеров</a>
+									</li>
+									<li class="footer-menu__item">
+										<a href="#" class="footer-menu__link">Вакансии</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer__info">
+							<p>ОКВЭД</p>
+							<p>дополнительная инфа как в реестре</p>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<div class="footer-copy">
+							<span>
+								<span id="year"></span>
+								©Bitroid
+							</span>
+							<span>Все права защищены</span>
+						</div>
+						<a href="#" class="footer__link">Политика конфиденциальности</a>
+						<a href="#" class="footer__link">Пользовательское соглашение</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<section data-fls-cookiebanner="" class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Уведомление о cookie">
+			<div class="cookie-banner-inner">
+				<p>
+					На сайте используются cookie и Яндекс.Метрика для базовой аналитики посещаемости. Персональные данные через формы не собираются. Продолжая использовать сайт, вы
+			соглашаетесь с этим уведомлением.
+				</p>
+				<button type="button" data-fls-button="" class="button" id="cookieAccept">Понятно</button>
+			</div>
+		</section>
+		<div data-fls-popup="project" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<div class="popup__header">
+						<div class="popup__title">Обсудить проект</div>
+						<button data-fls-popup-close="" type="button" class="popup__close" aria-label="Закрыть модалку">
+							<svg>
+								<use xlink:href="./assets/img/spritemap.svg#sprite-close"></use>
+							</svg>
+						</button>
+					</div>
+					<div data-fls-popup-content="" class="popup__content">
+						<form data-fls-form="ajax" data-fls-form-popup="popup" method="POST" action="/sendmail">
+							<label>
+								<span>Name</span>
+								<input data-fls-input="" required type="text" name="form[name]" autocomplete="off" data-fls-form-errtext="Error name" data-fls-form-validatenow="" placeholder="Name" class="input" inputmode="text">
+							</label>
+							<label>
+								<span>Phone</span>
+								<input required type="tel" name="form[tel]" autocomplete="off" data-fls-form-errtext="Error tel" data-fls-input-mask="+7 (999) 999-99-99" data-fls-form-validatenow="" placeholder="+7 (___) ___-__-__" class="input" inputmode="numeric">
+							</label>
+							<label>
+								<span>Email</span>
+								<input required type="email" name="form[email]" autocomplete="off" data-fls-form-errtext="Error email" data-fls-form-validatenow="" placeholder="E-mail" class="input" autocapitalize="off" inputmode="email">
+							</label>
+							<label>
+								<span>Message</span>
+								<textarea name="form[message]" rows="4" autocomplete="off" class="input" inputmode="text"></textarea>
+							</label>
+							<button type="submit" class="button">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-fls-popup="order" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<div class="popup__header">
+						<div class="popup__title">Заказать сайт</div>
+						<button data-fls-popup-close="" type="button" class="popup__close" aria-label="Закрыть модалку">
+							<svg>
+								<use xlink:href="./assets/img/spritemap.svg#sprite-close"></use>
+							</svg>
+						</button>
+					</div>
+					<div data-fls-popup-content="" class="popup__content">
+						<form data-fls-form="ajax" data-fls-form-popup="popup" method="POST" action="/sendmail">
+							<label>
+								<span>Name</span>
+								<input data-fls-input="" required type="text" name="form[name]" autocomplete="off" data-fls-form-errtext="Error name" data-fls-form-validatenow="" placeholder="Name" class="input" inputmode="text">
+							</label>
+							<label>
+								<span>Phone</span>
+								<input required type="tel" name="form[tel]" autocomplete="off" data-fls-form-errtext="Error tel" data-fls-input-mask="+7 (999) 999-99-99" data-fls-form-validatenow="" placeholder="+7 (___) ___-__-__" class="input" inputmode="numeric">
+							</label>
+							<label>
+								<span>Email</span>
+								<input required type="email" name="form[email]" autocomplete="off" data-fls-form-errtext="Error email" data-fls-form-validatenow="" placeholder="E-mail" class="input" autocapitalize="off" inputmode="email">
+							</label>
+							<label>
+								<span>Message</span>
+								<textarea name="form[message]" rows="4" autocomplete="off" class="input" inputmode="text"></textarea>
+							</label>
+							<button type="submit" class="button">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-fls-popup="price" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<div class="popup__header">
+						<div class="popup__title">Рассчитать стоимость</div>
+						<button data-fls-popup-close="" type="button" class="popup__close" aria-label="Закрыть модалку">
+							<svg>
+								<use xlink:href="./assets/img/spritemap.svg#sprite-close"></use>
+							</svg>
+						</button>
+					</div>
+					<div data-fls-popup-content="" class="popup__content">
+						<form data-fls-form="ajax" data-fls-form-popup="popup" method="POST" action="/sendmail">
+							<label>
+								<span>Name</span>
+								<input data-fls-input="" required type="text" name="form[name]" autocomplete="off" data-fls-form-errtext="Error name" data-fls-form-validatenow="" placeholder="Name" class="input" inputmode="text">
+							</label>
+							<label>
+								<span>Phone</span>
+								<input required type="tel" name="form[tel]" autocomplete="off" data-fls-form-errtext="Error tel" data-fls-input-mask="+7 (999) 999-99-99" data-fls-form-validatenow="" placeholder="+7 (___) ___-__-__" class="input" inputmode="numeric">
+							</label>
+							<label>
+								<span>Email</span>
+								<input required type="email" name="form[email]" autocomplete="off" data-fls-form-errtext="Error email" data-fls-form-validatenow="" placeholder="E-mail" class="input" autocapitalize="off" inputmode="email">
+							</label>
+							<label>
+								<span>Message</span>
+								<textarea name="form[message]" rows="4" autocomplete="off" class="input" inputmode="text"></textarea>
+							</label>
+							<button type="submit" class="button">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-fls-popup="consultation" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<div class="popup__header">
+						<div class="popup__title">Получить консультацию</div>
+						<button data-fls-popup-close="" type="button" class="popup__close" aria-label="Закрыть модалку">
+							<svg>
+								<use xlink:href="./assets/img/spritemap.svg#sprite-close"></use>
+							</svg>
+						</button>
+					</div>
+					<div data-fls-popup-content="" class="popup__content">
+						<form data-fls-form="ajax" data-fls-form-popup="popup" method="POST" action="/sendmail">
+							<label>
+								<span>Name</span>
+								<input data-fls-input="" required type="text" name="form[name]" autocomplete="off" data-fls-form-errtext="Error name" data-fls-form-validatenow="" placeholder="Name" class="input" inputmode="text">
+							</label>
+							<label>
+								<span>Phone</span>
+								<input required type="tel" name="form[tel]" autocomplete="off" data-fls-form-errtext="Error tel" data-fls-input-mask="+7 (999) 999-99-99" data-fls-form-validatenow="" placeholder="+7 (___) ___-__-__" class="input" inputmode="numeric">
+							</label>
+							<button type="submit" class="button">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<noscript>
+			<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1777212620630">
+		</noscript>
+	</body>
+</html>
