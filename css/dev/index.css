@@ -479,16 +479,14 @@ a.--icon-arrow::before {
 .index .section-hero__title {
   margin-bottom: 1.5625rem;
   font-weight: 600;
-}
-.index .section-hero__title {
+  font-size: clamp(1.5rem, 0.721rem + 3.46vw, 3.75rem); /* 24 - 60 */
   line-height: 1.3;
   text-align: center;
 }
 .index .section-hero__subtitle {
-  text-align: center;
-}
-.index .section-hero__subtitle {
+  font-size: clamp(0.875rem, 0.788rem + 0.38vw, 1.125rem); /* 14 - 18 */
   line-height: 1.3;
+  text-align: center;
 }
 .index .section-hero__actions {
   display: flex;
@@ -2617,12 +2615,6 @@ body::after {
   .text-block {
     font-size: 0.875rem;
   }
-  .index .section-hero__title {
-    font-size: 1.5rem;
-  }
-  .index .section-hero__subtitle {
-    font-size: 0.875rem;
-  }
   .index .section-recommended .recomended-item {
     padding-block: 1rem;
   }
@@ -2669,12 +2661,6 @@ body::after {
   .text-block {
     font-size: clamp( 0.875rem , 0.78409090909375rem  +  0.4545454545vw , 1.125rem );
   }
-  .index .section-hero__title {
-    font-size: clamp( 1.5rem , 0.68181818181875rem  +  4.0909090909vw , 3.75rem );
-  }
-  .index .section-hero__subtitle {
-    font-size: clamp( 0.875rem , 0.78409090909375rem  +  0.4545454545vw , 1.125rem );
-  }
   .index .section-recommended .recomended-item {
     padding-block: clamp( 1rem , 0.68181818181875rem  +  1.5909090909vw , 1.875rem );
   }
@@ -2713,7 +2699,7 @@ body::after {
     text-align: left;
   }
   .index .section-hero__subtitle {
-    max-width: 75ch;
+    max-width: 46.6875rem;
     text-align: left;
   }
   .index .section-hero__actions {
@@ -3081,12 +3067,6 @@ body::after {
     font-size: 2.5rem;
   }
   .text-block {
-    font-size: 1.125rem;
-  }
-  .index .section-hero__title {
-    font-size: 3.75rem;
-  }
-  .index .section-hero__subtitle {
     font-size: 1.125rem;
   }
   .index .section-recommended .recomended-item {
