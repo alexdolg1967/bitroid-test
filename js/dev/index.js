@@ -4219,14 +4219,16 @@ function menuInit() {
 		}
 	});
 	document.querySelectorAll(".menu__item").forEach((item) => {
-		const submenu = item.querySelector(".submenu");
-		if (submenu) item.addEventListener("click", function(e) {
+		const breakpoint = window.matchMedia("(max-width: 991.98px)");
+		const submenu = item.querySelector(".submenu-wrapper");
+		if (submenu && breakpoint.matches) item.addEventListener("click", function(e) {
 			e.stopPropagation();
 			submenu.classList.toggle("show");
 		});
 	});
 	document.addEventListener("click", function() {
-		document.querySelectorAll(".submenu").forEach((submenu) => {
+		window.matchMedia("(max-width: 991.98px)");
+		document.querySelectorAll(".submenu-wrapper").forEach((submenu) => {
 			submenu.classList.remove("show");
 		});
 	});
