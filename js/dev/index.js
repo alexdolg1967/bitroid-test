@@ -4218,20 +4218,38 @@ function menuInit() {
 			document.documentElement.toggleAttribute("data-fls-menu-open");
 		}
 	});
-	document.querySelectorAll(".menu__item").forEach((item) => {
-		const breakpoint = window.matchMedia("(max-width: 991.98px)");
-		const submenu = item.querySelector(".submenu-wrapper");
-		if (submenu && breakpoint.matches) item.addEventListener("click", function(e) {
-			e.stopPropagation();
-			submenu.classList.toggle("show");
+	function initHeaderDropdown() {
+		const triggers = document.querySelectorAll(".js-dropdown-trigger");
+		const dropdowns = document.querySelectorAll(".js-dropdown");
+		if (!triggers.length || !dropdowns.length) return;
+		triggers.forEach((trigger) => {
+			const item = trigger.closest(".menu__item--dropdown");
+			const dropdown = item?.querySelector(".js-dropdown");
+			if (!item || !dropdown) return;
+			function open() {
+				dropdown.removeAttribute("aria-hidden");
+				dropdown.classList.add("is-open");
+				item.setAttribute("aria-expanded", "true");
+			}
+			function close() {
+				dropdown.setAttribute("aria-hidden", "true");
+				dropdown.classList.remove("is-open");
+				item.setAttribute("aria-expanded", "false");
+			}
+			trigger.addEventListener("click", (e) => {
+				e.preventDefault();
+				if (dropdown.classList.contains("is-open")) close();
+				else open();
+			});
+			document.addEventListener("click", (e) => {
+				if (!item.contains(e.target)) close();
+			});
+			document.addEventListener("keydown", (e) => {
+				if (e.key === "Escape") close();
+			});
 		});
-	});
-	document.addEventListener("click", function() {
-		window.matchMedia("(max-width: 991.98px)");
-		document.querySelectorAll(".submenu-wrapper").forEach((submenu) => {
-			submenu.classList.remove("show");
-		});
-	});
+	}
+	initHeaderDropdown();
 }
 document.querySelector("[data-fls-menu]") && window.addEventListener("load", menuInit);
 //#endregion
