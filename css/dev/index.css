@@ -487,7 +487,7 @@ a.--icon-arrow::before {
 .index .section-hero__title {
   margin-bottom: 1.5625rem;
   font-weight: 600;
-  font-size: clamp(1.5rem, 0.721rem + 3.46vw, 3.75rem); /* 24 - 60 */
+  font-size: 1.5rem; /* 24 - 60 */
   line-height: 1.3;
   text-align: center;
 }
@@ -2899,6 +2899,7 @@ body::after {
 
 @media (min-width: 37.5rem){
   .index .section-hero__title {
+    font-size: 2.625rem;
     text-align: left;
   }
   .index .section-hero__subtitle {
@@ -3139,6 +3140,9 @@ body::after {
 }
 
 @media (min-width: 64rem){
+  .index .section-hero__title {
+    font-size: 3.4375rem;
+  }
   .index .section-recommended .recomend__wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -3349,6 +3353,9 @@ body::after {
   .ellipses.ellipses--footer::after {
     right: 30%;
     bottom: -64%;
+  }
+  .index .section-hero__title {
+    font-size: 3.75rem;
   }
   .header__actions .link-phone {
     display: block;
