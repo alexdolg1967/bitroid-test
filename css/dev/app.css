@@ -128,18 +128,15 @@ label {
 [id^='imedium-'] {
 	display: none !important;
 }
-@font-face {font-family: Roboto;font-display: swap;src: url("../assets/fonts/Roboto-Thin.woff2") format("woff2");font-weight: 100;font-style: normal;}
 @font-face {font-family: Roboto;font-display: swap;src: url("../assets/fonts/Roboto-SemiBold.woff2") format("woff2");font-weight: 600;font-style: normal;}
 @font-face {font-family: Roboto;font-display: swap;src: url("../assets/fonts/Roboto-Regular.woff2") format("woff2");font-weight: 400;font-style: normal;}
 @font-face {font-family: Roboto;font-display: swap;src: url("../assets/fonts/Roboto-Medium.woff2") format("woff2");font-weight: 500;font-style: normal;}
-@font-face {font-family: Roboto;font-display: swap;src: url("../assets/fonts/Roboto-Light.woff2") format("woff2");font-weight: 300;font-style: normal;}
-@font-face {font-family: Roboto;font-display: swap;src: url("../assets/fonts/Roboto-ExtraBold.woff2") format("woff2");font-weight: 800;font-style: normal;}
 @font-face {font-family: Roboto;font-display: swap;src: url("../assets/fonts/Roboto-Bold.woff2") format("woff2");font-weight: 700;font-style: normal;}
 @font-face {font-family: Roboto;font-display: swap;src: url("../assets/fonts/Roboto-Black.woff2") format("woff2");font-weight: 900;font-style: normal;}
 @font-face { 
 	font-family: "iconfont"; 
 	font-display: swap;
-	src: url("../assets/fonts/iconfont.woff2?656c73d0d8c6ab6226730e0ac9d49685") format("woff2"); 
+	src: url("../assets/fonts/iconfont.woff2?b7cb5b8df452718972eecdd1ba67a25a") format("woff2"); 
 } 
 [class*="--icon-"]::before{
 	font-family: iconfont; 
@@ -179,7 +176,7 @@ label {
   --swiper-pagination-color: #34ae6b;
   --swiper-pagination-bullet-inactive-color: #ffffff;
   --swiper-pagination-bullet-inactive-opacity: 0.9;
-  --header-height: 4.4375rem;
+  --header-height: 3rem;
   --min-height-section: calc(100svh - var(--header-height));
   --text-color: #1e1e1e;
   --bg-color: #ffffff;
@@ -237,12 +234,13 @@ body {
 .wrapper {
   display: grid;
   grid-template-rows: var(--header-height) 1fr auto;
-  flex: 1 1 auto;
+  flex: 1 0 auto;
   overflow: clip;
 }
 .wrapper > main {
   grid-row: 2;
   height: 100%;
+  min-height: calc(200dvh - var(--header-height));
 }
 .wrapper > footer {
   grid-row: 3;
@@ -1837,6 +1835,25 @@ a.--icon-arrow::before {
 /* stylelint-disable */
 .menu__body {
   display: flex;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  flex-direction: column;
+  gap: 1.875rem;
+  transition: right 0.3s;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: var(--bg-color);
+  padding: calc(var(--header-height) + 1.875rem) 0.9375rem 1.875rem 0.9375rem;
+  width: 100%;
+  max-width: 25rem;
+  height: 100svh;
+  overflow: auto;
+}
+[data-fls-menu-open] .menu__body {
+  right: 0;
+}
+[data-fls-menu-open] .menu__body::before {
+  right: 0;
 }
 .menu__list {
   display: flex;
@@ -1846,7 +1863,7 @@ a.--icon-arrow::before {
   margin-bottom: -0.75rem;
 }
 .menu__item:has(.is-open) > a::before {
-  rotate: -180deg;
+  transform: rotate(-180deg);
 }
 .menu__item > a {
   display: flex;
@@ -1854,7 +1871,7 @@ a.--icon-arrow::before {
   justify-content: flex-end;
   gap: 0.625rem;
   transition: color 0.2s ease;
-  padding-block: calc(var(--header-height) / 2 - 0.625rem);
+  padding-block: calc(var(--header-height) / 2 - 0.8125rem);
   height: var(--header-height);
   font-weight: 400;
   font-size: 1rem;
@@ -1862,7 +1879,8 @@ a.--icon-arrow::before {
   text-decoration: none;
 }
 .menu__item > a::before {
-  transition: rotate 0.25s ease;
+  transform-origin: 35% 40%;
+  transition: transform 0.25s ease;
 }
 .menu__item > a:hover {
   color: var(--accent-color);
@@ -2128,10 +2146,13 @@ a.--icon-arrow::before {
   left: 0;
   z-index: 200;
   transition: padding-top 0.4s ease, padding-bottom 0.4s ease;
-  background-color: var(--bg-color);
+  background-color: transparent;
   width: 100%;
   height: var(--header-height);
   color: var(--text-color);
+}
+.header.--header-scroll {
+  background-color: var(--bg-color);
 }
 [data-fls-scrolllock] .header.--header-scroll {
   padding-right: 0;
@@ -2148,6 +2169,7 @@ a.--icon-arrow::before {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-block: auto;
 }
 .header__logo img {
   transition: width 0.4s ease, height 0.4s ease;
@@ -2757,27 +2779,6 @@ body::after {
 }
 
 @media screen and (max-width: 61.99875rem){
-  .menu__body {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    flex-direction: column;
-    gap: 1.875rem;
-    transition: right 0.3s;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    background-color: var(--bg-color);
-    padding: calc(var(--header-height) + 1.875rem) 0.9375rem 1.875rem 0.9375rem;
-    width: 100%;
-    max-width: 25rem;
-    height: 100svh;
-    overflow: auto;
-  }
-  [data-fls-menu-open] .menu__body {
-    right: 0;
-  }
-  [data-fls-menu-open] .menu__body::before {
-    right: 0;
-  }
   .menu__list {
     flex-direction: column;
     gap: 1.875rem;
@@ -2954,7 +2955,7 @@ body::after {
 
 @media (min-width: 48rem){
   :root {
-    --header-height: 4.75rem;
+    --header-height: 4.5rem;
   }
   .ellipses::after {
     right: 24%;
