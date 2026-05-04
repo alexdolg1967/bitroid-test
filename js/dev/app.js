@@ -4396,11 +4396,13 @@ function menuInit() {
 	function closeAllDesktopMenus() {
 		if (desktopDropdown) desktopDropdown.classList.remove("active");
 		if (overlay) overlay.classList.remove("active");
+		bodyLockToggle();
 	}
 	function openDesktopMenu() {
 		if (desktopDropdown) {
 			desktopDropdown.classList.add("active");
 			if (overlay) overlay.classList.add("active");
+			bodyLockToggle();
 		}
 	}
 	const triggerLink = document.querySelector(".menu__item--dropdown > .menu__link");
