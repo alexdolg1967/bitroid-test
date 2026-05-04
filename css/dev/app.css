@@ -136,7 +136,7 @@ label {
 @font-face { 
 	font-family: "iconfont"; 
 	font-display: swap;
-	src: url("../assets/fonts/iconfont.woff2?656c73d0d8c6ab6226730e0ac9d49685") format("woff2"); 
+	src: url("../assets/fonts/iconfont.woff2?b7cb5b8df452718972eecdd1ba67a25a") format("woff2"); 
 } 
 [class*="--icon-"]::before{
 	font-family: iconfont; 
@@ -351,7 +351,7 @@ a.--icon-arrow {
 .link-phone:hover,
 .link-email:hover,
 a.--icon-arrow:hover {
-  color: var(--accent-color);
+  color: var(--color-green-1);
 }
 
 a.--icon-arrow {
@@ -1862,10 +1862,10 @@ a.--icon-arrow::before {
   position: static;
   margin-bottom: -0.75rem;
 }
-.menu__item:has(.is-open) > a {
+.menu__item:has(> .is-open) > a {
   color: var(--primary-color);
 }
-.menu__item:has(.is-open) > a::before {
+.menu__item:has(> .is-open) > a::before {
   transform: rotate(-180deg);
 }
 .menu__item > a {
@@ -1893,7 +1893,7 @@ a.--icon-arrow::before {
 }
 .menu__item .submenu-wrapper {
   --width--sub-menu--list: 19.5rem;
-  display: flex;
+  display: none;
   position: absolute;
   top: 110%;
   left: 50%;
@@ -1901,7 +1901,9 @@ a.--icon-arrow::before {
   transform: translateX(-50%);
   visibility: hidden;
   opacity: 0;
-  transition: all 0.4s ease-in-out;
+  transition-behavior: allow-discrete;
+  transition-duration: 0.4s;
+  transition-property: opacity, display, visibility;
   box-shadow: 0 0.25rem 1.5625rem 0 rgba(1, 8, 3, 0.08);
   border-radius: 1.875rem;
   background: var(--color-white);
@@ -1911,6 +1913,7 @@ a.--icon-arrow::before {
   pointer-events: none;
 }
 .menu__item .submenu-wrapper.is-open {
+  display: flex;
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
@@ -1918,7 +1921,6 @@ a.--icon-arrow::before {
 .menu__item .submenu-list {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
   background: linear-gradient(139deg, rgba(43, 172, 104, 0.2) 0%, rgba(37, 135, 249, 0.2) 100%);
   padding: 1.875rem 0 1.875rem 1.875rem;
   max-width: var(--width--sub-menu--list);
@@ -1929,7 +1931,7 @@ a.--icon-arrow::before {
   border-radius: 0.5rem 0 0 0.5rem;
   padding: 0.625rem 0.625rem 0.625rem 1.25rem;
 }
-.menu__item .submenu-list__item.active {
+.menu__item .submenu-list__item:has(.is-open) {
   background: var(--color-white);
   color: var(--green-main);
   font-weight: 600;
@@ -1951,7 +1953,8 @@ a.--icon-arrow::before {
   max-width: calc(100% - var(--width--sub-menu--list));
   pointer-events: none;
 }
-.menu__item .submenu-list__item.has-submenu.active .submenu-content {
+.menu__item .submenu-content.is-open,
+.menu__item .submenu-list__item[aria-expanded=true] > .submenu-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-content: flex-start;
@@ -2464,9 +2467,9 @@ button[type=submit] {
   --btn-font-family: inherit;
   --btn-font-size: clamp(0.875rem, 0.765rem + 0.49vw, 1rem); /* 14 - 16 */
   --btn-font-weight: 600;
-  --btn-color: var(--light-color);
-  --btn-bg-color: var(--primary-color);
-  --btn-border-color: var(--primary-color);
+  --btn-color: var(--color-white);
+  --btn-bg-color: var(--color-green-1);
+  --btn-border-color: var(--color-green-1);
   --btn-size-icon: 1.5rem;
   display: inline-flex;
   position: relative;
@@ -2491,9 +2494,8 @@ button[type=submit] {
   text-decoration: none;
 }
 .button:not(:disabled):active {
-  --btn-color: var(--accent-color);
-  --btn-bg-color: transparent;
-  --btn-border-color: var(--accent-color);
+  --btn-bg-color: var(--color-green-2);
+  --btn-border-color: var(--color-green-2);
 }
 .button:focus {
   outline: none;
@@ -2503,8 +2505,8 @@ button[type=submit] {
   outline-offset: 0.125rem;
 }
 .button:disabled {
-  opacity: 0.5;
   cursor: auto;
+  background: var(--color-ivory);
 }
 .button .icon {
   display: flex;
@@ -3331,8 +3333,8 @@ body::after {
 
 @media (any-hover: hover) and (pointer: fine){
   .button:not(:disabled):hover {
-    --btn-bg-color: var(--accent-color);
-    --btn-border-color: var(--accent-color);
+    --btn-bg-color: var(--color-green-2);
+    --btn-border-color: var(--color-green-2);
   }
   .button--lite:not(:disabled):hover {
     --btn-color: var(--accent-color);
