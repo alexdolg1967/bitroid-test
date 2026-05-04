@@ -4411,8 +4411,7 @@ function menuInit() {
 			}
 			trigger.addEventListener("click", (e) => {
 				e.preventDefault();
-				if (dropdown.classList.contains("is-open")) close();
-				else open();
+				if (dropdown.classList.contains("is-open")) {} else open();
 			});
 			document.addEventListener("click", (e) => {
 				if (!item.contains(e.target)) close();
@@ -4423,6 +4422,14 @@ function menuInit() {
 		});
 	}
 	initHeaderDropdown();
+	function initSubmenuContent() {
+		document.querySelectorAll("submenu").forEach((submenu) => {
+			const triggers = submenu.querySelectorAll(".js-dropdown-trigger");
+			submenu.querySelectorAll(".js-dropdown");
+			console.log("triggers" + triggers);
+		});
+	}
+	initSubmenuContent();
 }
 document.querySelector("[data-fls-menu]") && window.addEventListener("load", menuInit);
 //#endregion

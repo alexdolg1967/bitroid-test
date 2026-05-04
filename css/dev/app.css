@@ -136,7 +136,7 @@ label {
 @font-face { 
 	font-family: "iconfont"; 
 	font-display: swap;
-	src: url("../assets/fonts/iconfont.woff2?b7cb5b8df452718972eecdd1ba67a25a") format("woff2"); 
+	src: url("../assets/fonts/iconfont.woff2?656c73d0d8c6ab6226730e0ac9d49685") format("woff2"); 
 } 
 [class*="--icon-"]::before{
 	font-family: iconfont; 
@@ -1891,7 +1891,7 @@ a.--icon-arrow::before {
 .menu__item.menu__item--active > a {
   color: var(--primary-color);
 }
-.menu__item .submenu-wrapper {
+.menu__item .submenu {
   --width--sub-menu--list: 19.5rem;
   display: none;
   position: absolute;
@@ -1912,7 +1912,7 @@ a.--icon-arrow::before {
   overflow: hidden;
   pointer-events: none;
 }
-.menu__item .submenu-wrapper.is-open {
+.menu__item .submenu.is-open {
   display: flex;
   visibility: visible;
   opacity: 1;
@@ -1927,12 +1927,12 @@ a.--icon-arrow::before {
 }
 .menu__item .submenu-list__item {
   display: flex;
-  cursor: pointer;
   border-radius: 0.5rem 0 0 0.5rem;
-  padding: 0.625rem 0.625rem 0.625rem 1.25rem;
 }
 .menu__item .submenu-list__item:has(.is-open) {
   background: var(--color-white);
+}
+.menu__item .submenu-list__item:has(.is-open) > a {
   color: var(--green-main);
   font-weight: 600;
 }
@@ -1964,9 +1964,9 @@ a.--icon-arrow::before {
   pointer-events: all;
 }
 .menu__item .submenu-list__item-link {
-  display: flex;
-  flex-direction: column;
-  gap: 0.375rem;
+  padding: 0.625rem 1.25rem;
+  width: 100%;
+  text-align: left;
 }
 .menu__item .submenu-list__item-title {
   color: #fff;
@@ -2100,6 +2100,14 @@ a.--icon-arrow::before {
 .menu__item .submenu-content__url svg,
 .menu__item .submenu-content__url svg path {
   transition: var(--transition);
+}
+.menu__item .submenu-content__advantages {
+  background: var(--color-light-grey);
+  padding: 1.75rem 1.125rem 1.75rem 1.25rem;
+  color: #000;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 130%;
 }
 .menu__actions {
   display: flex;
@@ -3091,7 +3099,7 @@ body::after {
     gap: 1.5rem;
     background-color: transparent;
   }
-  .menu__item .submenu-wrapper {
+  .menu__item .submenu {
     min-height: 32rem;
   }
   .menu__actions {
