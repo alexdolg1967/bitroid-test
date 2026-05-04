@@ -136,7 +136,7 @@ label {
 @font-face { 
 	font-family: "iconfont"; 
 	font-display: swap;
-	src: url("../assets/fonts/iconfont.woff2?b7cb5b8df452718972eecdd1ba67a25a") format("woff2"); 
+	src: url("../assets/fonts/iconfont.woff2?656c73d0d8c6ab6226730e0ac9d49685") format("woff2"); 
 } 
 [class*="--icon-"]::before{
 	font-family: iconfont; 
@@ -1862,6 +1862,9 @@ a.--icon-arrow::before {
   position: static;
   margin-bottom: -0.75rem;
 }
+.menu__item:has(.is-open) > a {
+  color: var(--primary-color);
+}
 .menu__item:has(.is-open) > a::before {
   transform: rotate(-180deg);
 }
@@ -1883,7 +1886,7 @@ a.--icon-arrow::before {
   transition: transform 0.25s ease;
 }
 .menu__item > a:hover {
-  color: var(--accent-color);
+  color: var(--primary-color);
 }
 .menu__item.menu__item--active > a {
   color: var(--primary-color);
@@ -1995,6 +1998,8 @@ a.--icon-arrow::before {
 .menu__item .submenu-content__link {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
   box-shadow: 0 0.25rem 1.5625rem 0 rgba(1, 8, 3, 0.08);
   border: 0.0625rem solid transparent;
   border-radius: 0.625rem;
@@ -2019,6 +2024,7 @@ a.--icon-arrow::before {
   color: var(--color-deep-grey);
   font-weight: 600;
   font-size: 1rem;
+  text-align: center;
 }
 .menu__item .submenu-content__link-text {
   padding: 0 0.625rem;
