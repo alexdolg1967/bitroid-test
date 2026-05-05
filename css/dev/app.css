@@ -1892,6 +1892,9 @@ a.--icon-arrow::before {
 .menu__item.active > a {
   color: var(--primary-color);
 }
+.menu__item.active > a::before {
+  transform: rotate(-180deg);
+}
 .menu__item.active .submenu {
   display: flex;
   visibility: visible;
