@@ -1937,20 +1937,20 @@ a.--icon-arrow::before {
   color: var(--green-main);
   font-weight: 600;
 }
-.menu__item .submenu-list__wrapper {
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-}
-.menu__item .submenu .submenu-list__item-link {
+.menu__item .submenu-list__item-link {
   padding: 0.625rem 1.25rem;
   width: 100%;
   text-align: left;
 }
-.menu__item .submenu .submenu-list__item-title {
+.menu__item .submenu-list__item-title {
   color: #fff;
   font-weight: 500;
   font-size: 1rem;
+}
+.menu__item .submenu-list__wrapper {
+  display: flex;
+  position: relative;
+  flex-grow: 1;
 }
 .menu__item .submenu-content {
   position: absolute;
@@ -2064,6 +2064,30 @@ a.--icon-arrow::before {
   font-size: 1rem;
   line-height: 1.3;
 }
+.menu__item .submenu-content__decor {
+  position: absolute;
+  right: -9.375rem;
+  bottom: -9.375rem;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 32rem;
+  height: 32rem;
+}
+.menu__item .submenu-content__decor img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.menu__item .submenu-content__decor::before {
+  position: absolute;
+  transform: rotate(100deg);
+  mix-blend-mode: color;
+  inset: -1.25rem;
+  background: linear-gradient(230deg, #34ae6b 15%, #2587f9 100%);
+  content: "";
+}
 .menu__actions {
   display: flex;
   justify-content: space-between;
@@ -2120,7 +2144,6 @@ a.--icon-arrow::before {
   background: rgba(0, 0, 0, 0.2);
   pointer-events: none;
 }
-
 .menu-overlay.active {
   visibility: visible;
   opacity: 1;
