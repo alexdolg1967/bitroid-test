@@ -2055,7 +2055,9 @@ a.--icon-arrow::before {
   align-items: flex-start;
 }
 .menu__item .submenu-content__advantages {
+  position: relative;
   align-self: flex-start;
+  z-index: 1;
   border-radius: 1rem;
   background: var(--color-light-grey);
   padding: 1.75rem 1.125rem 1.75rem 1.25rem;
@@ -2083,6 +2085,7 @@ a.--icon-arrow::before {
 .menu__item .submenu-content__decor::before {
   position: absolute;
   transform: rotate(100deg);
+  z-index: 0;
   mix-blend-mode: color;
   inset: -1.25rem;
   background: linear-gradient(230deg, #34ae6b 15%, #2587f9 100%);
