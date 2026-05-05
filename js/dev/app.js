@@ -1,4 +1,4 @@
-import { t as __commonJSMin } from "./app2.min.js";
+import { t as __commonJSMin } from "./app4.min.js";
 //#region \0vite/modulepreload-polyfill.js
 (function polyfill() {
 	const relList = document.createElement("link").relList;
@@ -4410,7 +4410,7 @@ function menuInit() {
 				bodyLockToggle();
 			}
 		}
-		const triggerLink = document.querySelector(".menu__item--dropdown > .menu__link");
+		const triggerLink = document.querySelector(".menu__item--dropdown > .js-dropdown-trigger");
 		if (triggerLink) triggerLink.addEventListener("click", (e) => {
 			e.preventDefault();
 			e.stopPropagation();
