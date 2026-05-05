@@ -208,7 +208,7 @@ label {
 }
 
 html {
-  accent-color: var(--accent-color);
+  accent-color: var(--color-blue);
 }
 
 body {
@@ -301,7 +301,7 @@ section:not(:first-of-type) {
 .ellipses::after {
   right: 29%;
   bottom: 35%;
-  background-color: var(--accent-color);
+  background-color: var(--color-blue);
 }
 .ellipses.ellipses--recomend::before {
   top: 58%;
@@ -880,7 +880,7 @@ a.--icon-arrow::before {
   font-weight: 600;
 }
 .index .section-offer form .checkbox__text a:hover {
-  color: var(--accent-color);
+  color: var(--color-blue);
 }
 .index .section-offer form [data-fls-form-error] {
   top: 100%;
@@ -1883,7 +1883,7 @@ a.--icon-arrow::before {
   text-decoration: none;
 }
 .menu__item > a::before {
-  transform-origin: 35% 40%;
+  transform-origin: 50% 40%;
   transition: transform 0.25s ease;
 }
 .menu__item > a:hover {
@@ -2325,7 +2325,7 @@ body:has(.menu-overlay.active) .header {
   font-size: 0.875rem;
 }
 .footer__link:hover {
-  color: var(--accent-color);
+  color: var(--color-green-1);
 }
 .footer-menu {
   grid-row: 3;
@@ -2349,7 +2349,7 @@ body:has(.menu-overlay.active) .header {
   min-width: 15ch;
 }
 .footer-menu__link:hover {
-  color: var(--accent-color);
+  color: var(--color-green-1);
 }
 .footer__license {
   display: flex;
@@ -2821,7 +2821,7 @@ body::after {
   height: 1.5625rem;
 }
 [data-fls-popup-close]:hover {
-  color: var(--accent-color);
+  color: var(--color-green-1);
 }
 .popup__content label:has(textarea) {
   grid-row: span 2;
