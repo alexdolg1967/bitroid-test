@@ -834,9 +834,6 @@ a.--icon-arrow::before {
   gap: 1.0625rem;
   margin-block: auto;
 }
-.index .section-offer form label.--form-error input {
-  outline: 0.0625rem solid red;
-}
 .index .section-offer form label:has(.input[name=name]) {
   grid-column: 1;
 }
@@ -881,10 +878,6 @@ a.--icon-arrow::before {
 }
 .index .section-offer form .checkbox__text a:hover {
   color: var(--color-blue);
-}
-.index .section-offer form [data-fls-form-error] {
-  top: 100%;
-  left: 1rem;
 }
 .index .section-consultation {
   position: relative;
@@ -1846,7 +1839,7 @@ a.--icon-arrow::before {
   background-color: var(--bg-color);
   padding: calc(var(--header-height) + 1.875rem) 0.9375rem 1.875rem 0.9375rem;
   width: 100%;
-  max-width: 25rem;
+  max-width: 100vw;
   height: 100svh;
   overflow: auto;
 }
@@ -1904,11 +1897,7 @@ a.--icon-arrow::before {
 .menu__item .submenu {
   --width--sub-menu--list: 19.5rem;
   display: none;
-  position: absolute;
-  top: 110%;
-  left: 50%;
   flex-direction: column;
-  transform: translateX(-50%);
   visibility: hidden;
   opacity: 0;
   transition-behavior: allow-discrete;
@@ -1918,7 +1907,6 @@ a.--icon-arrow::before {
   border-radius: 1.875rem;
   background: var(--color-white);
   width: 100%;
-  max-width: 68.5rem;
   overflow: hidden;
   pointer-events: none;
 }
@@ -2441,13 +2429,12 @@ label {
   position: relative;
   flex-direction: column;
   align-self: start;
-  gap: 0.25rem;
+  gap: 0.625rem;
 }
 
 [data-fls-form-error] {
-  position: absolute;
-  top: calc(100% + 0.25rem);
-  color: red;
+  position: relative;
+  color: var(--color-error);
   font-size: 0.6875rem;
 }
 
@@ -2557,7 +2544,7 @@ button[type=submit] {
   outline: none;
 }
 .button:focus-visible {
-  outline: 0.125rem solid var(--accent-color);
+  outline: 0.125rem solid var(--color-green-2);
   outline-offset: 0.125rem;
 }
 .button:disabled {
@@ -3148,6 +3135,11 @@ body::after {
     background-color: transparent;
   }
   .menu__item .submenu {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: min(68.5rem, 98vw);
     min-height: 32rem;
   }
   .menu__actions {
