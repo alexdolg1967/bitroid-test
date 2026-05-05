@@ -4460,14 +4460,14 @@ function menuInit() {
 				}
 			});
 		});
-	});
-	document.querySelectorAll(".submenu, .submenu-content, .submenu-list").forEach((block) => {
-		block.addEventListener("click", (e) => e.stopPropagation());
-	});
-	document.querySelectorAll(".submenu-content__link, .submenu-list__item-link:not(.js-dropdown-trigger)").forEach((link) => {
-		link.addEventListener("click", () => {
-			if (window.innerWidth <= 991.8) closeMobileMenu();
-			else closeAllDesktopMenus();
+		document.querySelectorAll(".submenu, .submenu-content, .submenu-list").forEach((block) => {
+			block.addEventListener("click", (e) => e.stopPropagation());
+		});
+		document.querySelectorAll(".submenu-content__link, .submenu-list__item-link:not(.js-dropdown-trigger)").forEach((link) => {
+			link.addEventListener("click", () => {
+				if (window.innerWidth <= 991.8) closeMobileMenu();
+				else closeAllDesktopMenus();
+			});
 		});
 	});
 }
