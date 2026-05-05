@@ -4410,7 +4410,7 @@ function menuInit() {
 				bodyLockToggle();
 			}
 		}
-		const triggerLink = document.querySelector(".menu__item--dropdown > .js-dropdown-trigger");
+		const triggerLink = desktopDropdown.querySelector(".js-dropdown-trigger");
 		if (triggerLink) triggerLink.addEventListener("click", (e) => {
 			e.preventDefault();
 			e.stopPropagation();
