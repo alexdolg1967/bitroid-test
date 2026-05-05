@@ -1933,7 +1933,7 @@ a.--icon-arrow::before {
 .menu__item .submenu-list__item:has(.is-open) {
   background: var(--color-white);
 }
-.menu__item .submenu-list__item:has(.is-open) > a {
+.menu__item .submenu-list__item:has(.is-open) > a, .menu__item .submenu-list__item:has(.is-open) > button {
   color: var(--green-main);
   font-weight: 600;
 }
@@ -1941,6 +1941,16 @@ a.--icon-arrow::before {
   display: flex;
   position: relative;
   flex-grow: 1;
+}
+.menu__item .submenu .submenu-list__item-link {
+  padding: 0.625rem 1.25rem;
+  width: 100%;
+  text-align: left;
+}
+.menu__item .submenu .submenu-list__item-title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
 }
 .menu__item .submenu-content {
   position: absolute;
@@ -1955,8 +1965,7 @@ a.--icon-arrow::before {
   max-width: calc(100% - var(--width--sub-menu--list));
   pointer-events: none;
 }
-.menu__item .submenu-content.is-open,
-.menu__item .submenu-list__item[aria-expanded=true] > .submenu-content {
+.menu__item .submenu-content.is-open {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-content: flex-start;
@@ -1964,24 +1973,6 @@ a.--icon-arrow::before {
   visibility: visible;
   opacity: 1;
   pointer-events: all;
-}
-.menu__item .submenu-list__item-link {
-  padding: 0.625rem 1.25rem;
-  width: 100%;
-  text-align: left;
-}
-.menu__item .submenu-list__item-title {
-  color: #fff;
-  font-weight: 500;
-  font-size: 1rem;
-}
-.menu__item .submenu-list__item-icon {
-  display: flex;
-}
-.menu__item .submenu-list__item-subtile {
-  color: rgb(160, 161, 165);
-  font-weight: 400;
-  font-size: 0.75rem;
 }
 .menu__item .submenu-content__title {
   margin-bottom: 1.5625rem;
